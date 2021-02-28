@@ -3,23 +3,29 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
+      <div >
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <input/>
+          <button>save</button>
         </header>
+        <p className="todo-list">
+          <hr/>
+          <ul>
+            <li className="todo-item">
+              <span>todo 1</span>
+              <button className="todo-item-delete" >X</button>
+            </li>
+            <li>
+              todo 2
+            </li>
+            <li>
+              todo 3
+            </li>
+          </ul>
+        </p>
       </div>
     );
   }
