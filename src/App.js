@@ -36,10 +36,11 @@ class App extends Component {
     const index = todoList.findIndex((item) => {
       return targetItem === item;
     });
+
     if (index === -1) {
-      console.log(index);
       return;
     }
+
     todoList.splice(index, 1);
     this.setState({
       todoList,
